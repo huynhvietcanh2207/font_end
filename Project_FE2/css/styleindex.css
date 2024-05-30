@@ -340,16 +340,113 @@ header {
     -webkit-text-fill-color: transparent;
     margin-left: 15px;
 }
-.section-nike {
-    opacity: 0; /* Ban đầu opacity là 0 */
-    transform: translateY(50px); /* Ban đầu dịch chuyển */
+/* animation load nhóe */
+/* font p a */
+.section-font {
+    opacity: 0;
+    transform: translateY(50px); 
     transition: opacity 0.5s, transform 0.5s;
 }
 
-.section-nike.active {
-    opacity: 1; /* Khi active opacity là 1 */
-    transform: translateY(0px); /* Khi active dịch chuyển về vị trí ban đầu */
+.section-font.active {
+    opacity: 1; 
+    transform: translateY(0px); 
 }
+ /* product  */
+ .shoes {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.shoes.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* about */
+.about_font {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.about_font.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* about text and image nhóe */
+.about_main {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.about_main.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* review font nhóe */
+.review_font {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.review_font.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* review box1 */
+.box1 {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.box1.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* box2 */
+.box2 {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.box2.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* servicesFont */
+.services_font {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.services_font.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* servicesCards */
+.services_cards {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.services_cards.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+
+
+
+
+
+
+
 /*  */
 .section-nike h1 {
     font-size: 60px;
