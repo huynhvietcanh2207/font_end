@@ -4,9 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav{
+    height: 80px;
+}
 
 body {
-    background: linear-gradient(to top left, #61b89d, #b5ffff);
+    background: linear-gradient(183deg, rgba(203,241,198,1) 0%, rgba(85,210,142,1) 51%, rgba(221,237,228,1) 99%);
+    /* background: linear-gradient(183deg, rgba(188,244,181,1) 0%, rgba(94,182,134,1) 51%, rgba(221,237,228,1) 99%); */
+    /* background: linear-gradient(183deg, rgba(188,244,181,1) 0%, rgba(94,182,134,1) 61%); */
+    /* background: linear-gradient(to top left, #61b89d, #b5ffff); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -64,12 +70,17 @@ body {
 }
 
 .nav-item:active {
-    animation: click 0.5s infinite linear;
+    animation: click 0.5s;
 }
 
 .nav-item:hover::after {
     animation-delay: .5s;
 }
+nav ul li{
+    padding: 30px;
+
+}
+
 
 @keyframes move {
     0% {
@@ -89,7 +100,7 @@ body {
     }
 
     100% {
-        transform: translateY(10px);
+        transform: translateY(15px);
     }
 }
 
@@ -275,6 +286,9 @@ header {
 }
 
 .image {
+     /* làm hiệu ứng */
+     /* position: relative; */
+     
     width: 400px;
     height: auto;
     animation: action 3s ease infinite;
@@ -283,10 +297,12 @@ header {
 }
 
 .img {
+   
     width: 350px;
     height: 300px;
     margin-left: 35px;
 }
+
 
 @keyframes action {
     0% {
@@ -340,113 +356,6 @@ header {
     -webkit-text-fill-color: transparent;
     margin-left: 15px;
 }
-/* animation load nhóe */
-/* font p a */
-.section-font {
-    opacity: 0;
-    transform: translateY(50px); 
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.section-font.active {
-    opacity: 1; 
-    transform: translateY(0px); 
-}
- /* product  */
- .shoes {
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.shoes.active {
-    opacity: 1; 
-    transform: translateY(0px); 
-}
-/* about */
-.about_font {
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.about_font.active {
-    opacity: 1; 
-    transform: translateY(0px); 
-}
-/* about text and image nhóe */
-.about_main {
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.about_main.active {
-    opacity: 1; 
-    transform: translateY(0px); 
-}
-/* review font nhóe */
-.review_font {
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.review_font.active {
-    opacity: 1; 
-    transform: translateY(0px); 
-}
-/* review box1 */
-.box1 {
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.box1.active {
-    opacity: 1; 
-    transform: translateY(0px); 
-}
-/* box2 */
-.box2 {
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.box2.active {
-    opacity: 1; 
-    transform: translateY(0px); 
-}
-/* servicesFont */
-.services_font {
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.services_font.active {
-    opacity: 1; 
-    transform: translateY(0px); 
-}
-/* servicesCards */
-.services_cards {
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.services_cards.active {
-    opacity: 1; 
-    transform: translateY(0px); 
-}
-
-
-
-
-
-
-
 /*  */
 .section-nike h1 {
     font-size: 60px;
@@ -644,6 +553,8 @@ header {
 }
 
 .review .review_box .review_card {
+    /* transform: translateY(-50px); */
+    /* perspective: 600px; */
     width: 500px;
     background: #f3f1f1;
     padding: 20px 25px;
@@ -678,7 +589,44 @@ header {
     line-height: 22px;
     margin-top: 15px;
 }
+.review .review_box .review_card:hover{
+ 
+    /* transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+    /* transform-style: preserve-3d; */
+    animation: moveReview 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+}
+@keyframes moveReview{
+    0%{
+    /* transform: rotateZ(0); */
+    transform: rotate(0);
+    }
+    100%{
+        /* transform: rotateZ(30px); */
+        transform: rotate(10deg);
+    }
+}
+/* image */
+.image-shoe-brand{
+position: relative;
+width: 300px;
+height: 200px;
 
+}
+.image-shoe{
+    position: absolute;
+    inset: 0;
+    /* ẩn */
+    opacity: 0;
+    /* opacity: 0.5; */
+
+}
+.image-shoe:hover{
+
+}
+.text-shoe{
+position: absolute;
+inset: 0;
+}
 /*services*/
 
 .services {
@@ -727,15 +675,36 @@ header {
     color: #ffffff;
     margin-bottom: 60px;
 }
+.vienkimcuong:hover{
+    color: rgb(3, 97, 66);
+    box-shadow: 0 0 20px rgba(255, 255, 255,.6);
+}
+.cup:hover{
+    color: rgb(3, 97, 66);
+    box-shadow: 0 0 20px rgba(255, 255, 255,.6);
+}
+.gift:hover{
+    color: rgb(3, 97, 66);
+    box-shadow: 0 0 20px rgba(255, 255, 255,.6);
+}
+/* .Labeladd{
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
 
+} */
 /*Footer*/
 
 footer {
-    width: 100%;
+    /* width: 100%; */
+    display: block;
+
 }
 
 footer .footer_main {
     margin-top: 100px;
+    /* display: block; */
     width: 100%;
     background-color: #0a171b;
     display: flex;
