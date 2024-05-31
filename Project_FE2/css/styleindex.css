@@ -338,6 +338,197 @@ header {
     width: 25%;
 }
 /*  */
+/*  */
+#textbanner h1 {
+    font-size: 100px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+#textbanner h1 span {
+    background: linear-gradient(to right, #20c760, #59d014);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+/* animation load nhóe */
+/* font p a */
+.section-font {
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.section-font.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+ /* product  */
+ .shoes {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.shoes.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* about */
+.about_font {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.about_font.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* about text and image nhóe */
+.about_main {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.about_main.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* review font nhóe */
+.review_font {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.review_font.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* review box1 */
+.box1 {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.box1.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* box2 */
+.box2 {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.box2.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* servicesFont */
+.services_font {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.services_font.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* servicesCards */
+.services_cards {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.services_cards.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+
+/* gallery */
+.gallery-container {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.gallery-container.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* services11 */
+.services11 {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.services11.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* services22 */
+.services2 {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.services2.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* textClaritas */
+.textClaritas {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.textClaritas.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* Claritas1 */
+.Claritas1 {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.Claritas1.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+/* Claritas2 */
+.Claritas2 {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.Claritas2.active {
+    opacity: 1; 
+    transform: translateY(0px); 
+}
+
+
+
+
+/*  */
 #textbanner h1 {
     font-size: 100px;
     margin-top: 20px;
@@ -658,11 +849,10 @@ inset: 0;
     top: 50px;
 }
 
-.services .services_box i {
-    font-size: 60px;
+.container .servicess i {
+  
     color: orange;
-    margin: 20px 0;
-    cursor: pointer;
+    
 }
 
 .services .services_box h3 {
